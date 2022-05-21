@@ -217,11 +217,22 @@ FINAL_FEATURES = [
     'BasePolicy_Liability',
     'Age']
 
+CHATBOT_INPUT_CSV_FILEPATH = '../data/sample_input_csv.csv'
 
 CHATBOT_USER_INPUT_FEATURES = [
     'DateAccident',
+    'PolicyHolder',
     'PolicyNumber',
     'PoliceReportFiled',
     'Fault',
-    'Location',
+    'AccidentArea',
     'WitnessPresent']
+
+POLICY_NUMBER_COL = 'PolicyNumber'
+
+MONTH_COL = 'Month'
+MONTH_CLAIMED_COL = 'MonthClaimed'
+
+CHATBOT_OUTPUT_CSV_FILEPATH = '../data/sample_output_csv.csv' 
+
+FRAUD_MODEL_PATH = '../models/03_model_training_with_smote/DecisionTreeClassifier.pkl'
